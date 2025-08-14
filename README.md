@@ -31,7 +31,7 @@ Start the MCP server:
 
     python3 server.py
 
-The service will run with HTTP streaming enabled.
+The service will start listening to 127.0.0.1 at port 8000. Exposes HTTP streaming server with no authentication.
 
 # Tools
 * search_issues_tool: Search for issues in a specific file.
