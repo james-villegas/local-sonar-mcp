@@ -8,16 +8,20 @@ Sonar-MCP is a FastMCP-based service for searching SonarQube issues and retrievi
 # Setup
 Clone the repository.
 
-Install dependencies (if using pyproject.toml):
+Create and activate a venv in the project
 
-    pip install -r requirements.txt
+    python3 -m venv .venv
+    source .venv/bin/activate
 
-Or, if using Poetry:
+Install uv
 
-    poetry install
+    pip install uv
+
+Install dependencies
+
+    uv sync
 
 Create a .env file in the project root with your SonarQube credentials:
-
 
     SONAR_TOKEN=your-sonarqube-token
     SONAR_URL=https://your-sonarqube-url
