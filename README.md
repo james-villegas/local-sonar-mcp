@@ -36,3 +36,7 @@ The service will start listening to 127.0.0.1 at port 8000. Exposes HTTP streami
 # Tools
 * search_issues_tool: Search for issues in a specific file.
 * get_rule_tool: Get the definition of a specific rule.
+
+# Emaple Prompt
+
+    Search for and fix the sonar issues for the current file. Use the relative path of the file starting from and including the __PROJECT_ROOT__ directory, not the full path. Use 'SONAR_PROJECT_ID' as the project.
