@@ -21,7 +21,7 @@ Install dependencies
 
     uv sync
 
-Create a .env file in the project root with your SonarQube credentials:
+Create a .env file in the project root with your SonarQube token and the SonarQube url:
 
     SONAR_TOKEN=your-sonarqube-token
     SONAR_URL=https://your-sonarqube-url
@@ -37,6 +37,6 @@ The service will start listening to 127.0.0.1 at port 8000. Exposes HTTP streami
 * search_issues_tool: Search for issues in a specific file.
 * get_rule_tool: Get the definition of a specific rule.
 
-# Emaple Prompt
+# Example Prompt
 
     Search for and fix the sonar issues for the current file. Use the relative path of the file starting from and including the __PROJECT_ROOT__ directory, not the full path. Use 'SONAR_PROJECT_ID' as the project.
